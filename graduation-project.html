@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Graduation Project</title>
+</head>
+<body>
+    <!-- navi -->
+    <nav class="navbar">
+        <div class="logo">🖥 My Personal Website</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="graduation-project.html" class="active">Graduation Project</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#contact-info">Contact</a></li>
+        </ul>
+        <a href="#" class="hire-btn">Hire Me</a>
+    </nav>
+
+    <!-- Graduation Project Content -->
+    <section class="graduation-project background-block">
+        <div class="project-container">
+            
+            <div class="project-text-card">
+                <h1>My Graduation Project</h1>
+                <p>
+                    This study aims to deeply analyze the entire production process of promotional short films from design to realization, comprehensively examine how to plan content and build narrative structure around the core theme of the video, explore the technical means of generating video special effects, analyze the application of non-linear editing in video creation, evaluate the technical strategy of seamless integration of virtual scenes and real scenes, and the cutting-edge technical practice of 3D animation production. Through this series of professional production steps and technical applications, it aims to create a visually fascinating, auditory shocking, and themed promotional short film.
+                </p>
+            </div>
+
+            <!-- 右侧视频卡片 -->
+            <div class="project-video-card">
+                <video controls>
+                    <source src="video\graduation-project.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <div id="contact-info" class="contact-info">
+        <p>📧 Email: 24466034@life.hkbu.edu.hk</p>
+        <p>📞 Phone: +852 59562006</p>
+        <p>📍 Location: Hong Kong Baptist University</p>
+    </div>
+
+    <script>
+        document.querySelector('.nav-links a[href="#contact-info"]').addEventListener('click', function (e) {
+            e.preventDefault(); 
+            document.getElementById('contact-info').scrollIntoView({
+                behavior: 'smooth' 
+            });
+        });
+    </script>
+</body>
+</html>

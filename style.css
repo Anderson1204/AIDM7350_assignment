@@ -1,0 +1,299 @@
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 导航栏 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #F0E3D7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.hire-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover {
+    background-color: #333;
+}
+
+/* 介绍部分 */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #D9CBBE;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.black:hover {
+    background-color: #333;
+}
+
+.white {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ddd;
+}
+
+.white:hover {
+    background-color: #f0f0f0;
+}
+
+/* 联系文本 */
+.contact-text {
+    color: #7a7a7a;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.intro-image img {
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    background-color: #fff;
+}
+
+.brands span {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.brands span strong {
+    font-weight: bold;
+}
+
+/* 软件展示 */
+.software {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+.software-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.software-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto; 
+    margin-left: 60px; 
+}
+
+.software-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px;
+    height: 270px;
+}
+
+.software-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.software-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.software-card p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.software-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 联系信息 */
+.contact-info {
+    margin-top: 0px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* 项目展示 */
+.background-block {
+    background-color: #D9CBBE;
+    padding: 50px 20px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+    position: relative; 
+    padding: 20px;
+}
+
+.project-text-card {
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; 
+    text-align: center; 
+}
+
+.project-video-card {
+    flex: 1 1 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.project-video-card video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-text-card,
+    .project-video-card {
+        flex: 1 1 100%;
+    }
+}

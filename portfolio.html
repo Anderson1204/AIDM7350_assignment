@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- navi -->
+    <nav class="navbar">
+        <div class="logo">🖥 My Personal Website</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="graduation-project.html">Graduation Project</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="#contact-info">Contact</a></li>
+        </ul>
+        <a href="#" class="hire-btn">Hire Me</a>
+    </nav>
+
+    <!-- PDF Viewer -->
+<section class="pdf-viewer">
+    <iframe src="Wang, Yi-Hsiang Portfolio.pdf" width="100%" height="800px" style="border: none;"></iframe>
+</section>
+
+<!-- Contact Info -->
+<div id="contact-info" class="contact-info">
+    <p>📧 Email: 24466034@life.hkbu.edu.hk</p>
+    <p>📞 Phone: +852 59562006</p>
+    <p>📍 Location: Hong Kong Baptist University</p>
+</div>
+
+<script>
+    document.querySelector('.nav-links a[href="#contact-info"]').addEventListener('click', function (e) {
+        e.preventDefault(); 
+        document.getElementById('contact-info').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+</script>
+</body>
+</html>

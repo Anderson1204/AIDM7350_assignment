@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <!-- navi -->
+    <nav class="navbar">
+        <div class="logo">🖥 My Personal Website</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="graduation-project.html" target="_blank">Graduation Project</a></li>
+            <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
+            <li><a href="#contact-info" id="contact-link">Contact</a></li>
+        </ul>
+        <a href="#" class="hire-btn">Hire Me</a>
+    </nav>
+
+    <!-- intro -->
+    <section class="intro">
+        <div class="intro-text">
+            <h1><em>"Render the Present in 3D: Seize the Day"</em><br><em>Wang Yi-Hsiang</em></h1>
+            <p>Welcome to my personal portfolio website! I’m a passionate 3D designer dedicated to crafting immersive, visually stunning experiences.<br> For me, every moment is a chance to render the present in 3D and seize the day through creativity and innovation.</p>
+            <div class="buttons">
+                <a href="#" class="btn black" id="about-link">About Me</a>
+                <a href="Wang, Yi-Hsiang Portfolio.pdf" target="_blank" class="btn white">Portfolio</a>
+            </div>
+        </div>
+
+        <div class="intro-image">
+            <img src="jpg\profile.jpg" alt="Designer">
+        </div>
+    </section>
+
+    <section class="software">
+        <h2 class="software-title">Software That Powers My Creativity</h2>
+        <div class="software-container">
+            <!-- Photoshop -->
+            <div class="software-item">
+                <div class="software-card">
+                    <img src="jpg\ps.png" alt="Photoshop Logo">
+                    <h3>Photoshop</h3>
+                    <p>The world’s best imaging and graphic design software.</p>
+                </div>
+            </div>
+            <!-- Premiere Pro -->
+            <div class="software-item">
+                <div class="software-card">
+                    <img src="jpg\pr.png" alt="Premiere Pro Logo">
+                    <h3>Premiere Pro</h3>
+                    <p>Industry-leading video editing software for film, TV, and web.</p>
+                </div>
+            </div>
+            <!-- After Effects -->
+            <div class="software-item">
+                <div class="software-card">
+                    <img src="jpg\ae.png" alt="After Effects Logo">
+                    <h3>After Effects</h3>
+                    <p>Professional motion graphics and visual effects software.</p>
+                </div>
+            </div>
+            <!-- Substance Painter -->
+            <div class="software-item">
+                <div class="software-card">
+                    <img src="jpg\pt.png" alt="SP Logo">
+                    <h3>Painter</h3>
+                    <p>A 3D texturing tool for creating realistic and detailed materials.</p>
+                </div>
+            </div>
+            <!-- Maya -->
+            <div class="software-item">
+                <div class="software-card">
+                    <img src="jpg\maya.png" alt="Maya Logo">
+                    <h3>Maya</h3>
+                    <p>Industry-standard software for 3D animation, modeling, and simulation.</p>
+                </div>
+            </div>
+            <!-- Blender -->
+            <div class="software-item">
+                <div class="software-card">
+                    <img src="jpg\blender.png" alt="Blender Logo">
+                    <h3>Blender</h3>
+                    <p>A powerful 3D creation suite for modeling, animation, and rendering.</p>
+                </div>
+            </div>
+            <!-- Unity -->
+            <div class="software-item">
+                <div class="software-card">
+                    <img src="jpg\unity.png" alt="Unity 3D Logo">
+                    <h3>Unity 3D</h3>
+                    <p>A versatile game engine for creating immersive 3D experiences.</p>
+                </div>
+            </div>
+            <!-- Unreal Engine -->
+            <div class="software-item">
+                <div class="software-card">
+                    <img src="jpg\unreal.png" alt="Unreal Engine Logo">
+                    <h3>Unreal Engine</h3>
+                    <p>A cutting-edge real-time 3D creation tool for games and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <div id="contact-info" class="contact-info">
+        <p>📧 Email: 24466034@life.hkbu.edu.hk</p>
+        <p>📞 Phone: +852 59562006</p>
+        <p>📍 Location: Hong Kong Baptist University</p>
+    </div>
+
+    <script>
+        // 平滑滚动 Contact Info
+        document.getElementById('contact-link').addEventListener('click', function (e) {
+            e.preventDefault(); // 阻止默认跳转行为
+            document.getElementById('contact-info').scrollIntoView({
+                behavior: 'smooth' 
+            });
+        });
+    
+        // 平滑滚动到页面顶部
+        document.getElementById('about-link').addEventListener('click', function (e) {
+            e.preventDefault(); 
+            window.scrollTo({
+                top: 0, 
+                behavior: 'smooth' 
+            });
+        });
+    </script>
+</body>
+</html>
